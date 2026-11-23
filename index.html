@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#102747" name="theme-color"/>
+  <title>
+   Ma Annapurna Caterers
+  </title>
+  <style>
+   *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:75px}body{margin:0;color:#172b45;font:16px/1.6 Arial,'Noto Sans Bengali',sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}header{height:70px;display:flex;align-items:center;gap:15px;padding:0 5%;background:white;position:sticky;top:0;z-index:9;box-shadow:0 3px 18px #122a4710}.brand{display:flex;align-items:center;gap:9px;margin-right:auto}.brand b{display:block;font-size:16px;line-height:1.2}.brand small{display:block;letter-spacing:3px;font-size:10px;color:#62718a}.logo{width:40px;height:40px;border-radius:12px;background:#102747;color:white;display:grid;place-items:center;font-size:20px}nav{display:flex;gap:18px}nav a{font-size:13px;color:#4b5d73}.lang,.hamb{border:1px solid #d8e0e9;background:white;border-radius:8px;padding:7px 10px;color:#102747;cursor:pointer}.hamb{display:none}.hero{background:#f2f5f8;padding:55px 6%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}.eyebrow{font-size:11px;letter-spacing:2px;color:#a16b38;font-weight:bold}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.1;margin:15px 0;color:#102747}.hero p,.section p{color:#6c7b8d}.actions{display:flex;gap:10px;margin:22px 0}.btn{border:0;border-radius:8px;padding:11px 16px;display:inline-flex;justify-content:center;font-weight:bold;font-size:13px;cursor:pointer}.blue{background:#102747;color:white}.white{background:white;color:#102747;border:1px solid #dce3eb}.stat{display:flex;flex-direction:column;border-left:3px solid #c78d4b;padding-left:12px}.stat b{font-size:20px}.stat span{font-size:12px;color:#69788c}.hero-photo{min-height:310px;border-radius:130px 130px 18px 18px;background:linear-gradient(0deg,#10274745,#10274708),url('image/res/hero-photo.jpg') center/cover;position:relative}.photo-note{position:absolute;bottom:15px;left:15px;background:white;padding:9px 12px;border-radius:7px;font-size:10px;letter-spacing:1px}.service-ribbon{display:flex;justify-content:center;flex-wrap:wrap;gap:25px;padding:17px;background:#102747;color:white;font-size:12px}.section{padding:60px 6%}.heading{display:flex;justify-content:space-between;align-items:center;gap:15px}.section h2{font-size:clamp(28px,3.5vw,40px);line-height:1.2;margin:10px 0}.count{background:#f2f5f8;border-radius:12px;padding:10px 17px;text-align:center}.count b,.count small{display:block}.count b{font-size:25px}.count small{font-size:9px;letter-spacing:2px}.controls{margin:22px 0 14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.controls input{width:min(100%,300px);border:1px solid #dbe2e9;border-radius:8px;padding:10px 12px}.filters,.categories{display:flex;gap:7px;flex-wrap:wrap}.filters button,.categories button{background:white;border:1px solid #dce3eb;color:#526277;padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer}.filters button.active,.categories button.active{background:#102747;color:white}.categories{flex-wrap:nowrap;overflow:auto;padding:3px 0 16px}.categories button{white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.dish{border:1px solid #e4e9ee;border-radius:12px;overflow:hidden}.dish-img{height:130px;background:#e9eef3;position:relative}.dish-img img{width:100%;height:100%;object-fit:cover}.pill{position:absolute;top:8px;left:8px;background:white;border-radius:20px;padding:3px 8px;font-size:10px}.dish-body{padding:11px}.dish h3{font-size:13px;margin:0 0 4px;line-height:1.4}.bn-name{font-size:11px;color:#7c8998;margin:0}.dish-desc{font-size:11px;line-height:1.45;color:#68788b;margin:8px 0 0}.soft,.booking{background:#f3f6f9}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:24px}.services article{background:white;padding:22px;border-radius:12px;border:1px solid #e6ebf0}.services article>span{font-size:25px;color:#102747}.services h3{margin:12px 0 4px}.services p{font-size:13px;margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-image{height:320px;border-radius:15px;background:url('image/res/about-photo.jpg') center/cover}.muted{font-size:12px}.booking{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.booking-form{background:white;padding:22px;border-radius:13px;border:1px solid #e4e9ee;display:grid;gap:12px}.booking-form label{display:grid;gap:5px;font-size:12px;font-weight:bold}.booking-form input,.booking-form select,.booking-form textarea{width:100%;border:1px solid #dbe2e9;border-radius:8px;padding:10px;font-size:14px;min-width:0}.full{width:100%}.booking-form small{color:#778497;font-size:11px}.contact{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.3fr;gap:18px;align-items:start}.contact h2{font-size:28px}.contact p{font-size:12px;overflow-wrap:anywhere}footer{background:#102747;color:white;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:23px 6%}footer .brand small,footer p,footer>small{color:#c0cad6;font-size:12px}#empty{text-align:center;padding:30px;color:#6c7b8d}.bn{font-family:Arial,'Noto Sans Bengali',sans-serif}@media(max-width:850px){nav{gap:10px}.grid{grid-template-columns:repeat(3,1fr)}.section{padding:48px 4%}.hero{padding:42px 4%;gap:20px}.contact{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){header{height:64px;padding:0 12px;gap:8px}.brand b{font-size:14px}.logo{width:36px;height:36px}.hamb{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;padding:14px 20px;background:white;box-shadow:0 8px 15px #10274715;flex-direction:column}nav.open{display:flex}.lang{font-size:12px;padding:7px}.hero{grid-template-columns:1fr;padding:28px 18px;gap:18px}.hero-photo{min-height:220px;grid-row:1;border-radius:100px 100px 15px 15px}.hero h1{font-size:38px}.hero-copy{grid-row:2}.service-ribbon{gap:8px 15px;font-size:10px;padding:14px 8px}.section{padding:42px 15px}.section h2{font-size:29px}.heading{align-items:flex-start}.count{padding:8px 12px}.controls{display:block}.controls input{width:100%;margin-bottom:10px}.filters{display:grid;grid-template-columns:repeat(2,1fr)}.filters button{padding:8px 4px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.dish-img{height:105px}.dish-body{padding:9px}.dish h3{font-size:12px}.services{grid-template-columns:1fr;gap:10px}.services article{padding:17px}.about,.booking{grid-template-columns:1fr;gap:20px}.about-image{height:230px}.booking-form{padding:15px}.contact{grid-template-columns:1fr 1fr;gap:12px}.contact>div:first-child{grid-column:1/-1}footer{padding:20px 15px}footer>p{display:none}}
+  </style>
+  <style>
+   .hero h1,.section h2{font-family:Georgia,'Times New Roman',serif;font-weight:700}.dish-img{height:160px}.dish-body{padding:13px}.dish h3{font-size:15px}.dish-desc{font-size:12px;line-height:1.45;color:#68788b;margin:8px 0 0}@media(max-width:600px){.dish-img{height:125px}.dish h3{font-size:14px}.dish-desc{font-size:11px}}
+  </style>
+  <style>
+   .dish-body{display:flex;flex-direction:column;min-height:150px}.detail-btn{margin-top:auto}
+.detail-btn{margin-top:14px;width:100%;background:#172f50;color:#fff;border:0;border-radius:9px;padding:12px 10px;font-weight:600;cursor:pointer}
+.food-modal{display:none;position:fixed;inset:0;z-index:1000;background:#102033b8;align-items:center;justify-content:center;padding:18px}
+.food-modal.open{display:flex}
+.food-modal-card{background:#fff;width:min(100%,650px);max-height:90vh;overflow:auto;border-radius:24px;padding:18px;position:relative;color:#243449}
+.food-modal-img{width:100%;height:260px;object-fit:cover;border-radius:16px;display:block}
+.food-modal-close{position:absolute;right:28px;top:28px;border:0;border-radius:50%;background:white;width:42px;height:42px;font-size:25px;cursor:pointer}
+.food-modal-kind{margin:20px 0 8px;font-size:12px;letter-spacing:2px;color:#647b91;text-transform:uppercase}
+.food-modal-card h2{margin:8px 0 10px;font-size:30px}
+.food-modal-desc{color:#718091;line-height:1.6}
+.portion-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}
+.portion-option{border:1px solid #dce3ea;border-radius:12px;padding:12px 14px;text-align:left;background:white;color:#26384b;cursor:pointer}
+.portion-option.selected{border-color:#172f50;background:#f0f4f8;box-shadow:inset 0 0 0 1px #172f50}
+.portion-option b,.portion-option span{display:block}
+.portion-option span{font-size:12px;color:#788797;margin-top:3px}
+.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.modal-actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:13px 16px;font-weight:600;text-decoration:none}
+.modal-call{background:#172f50;color:white}.modal-wa{border:1px solid #cbd5df;color:#243449}
+@media(max-width:600px){.food-modal{padding:12px}.food-modal-card{padding:14px;border-radius:22px}.food-modal-img{height:200px}.food-modal-close{right:22px;top:22px;width:38px;height:38px}.food-modal-card h2{font-size:25px}.portion-grid{gap:8px}.portion-option{padding:10px}}
+  </style>
+  <style>
+   .card-prices{display:flex;flex-direction:column;gap:4px;margin-top:10px;color:#172f50;font-size:12px;font-weight:700}.price-line{display:block!important;font-weight:700;color:#172f50;font-size:15px;margin-top:7px}
+.price-line.unset{font-weight:400;color:#7b8794;font-size:12px}
+.admin-launch{position:fixed;right:14px;bottom:18px;z-index:800;background:#172f50;color:#fff;border:0;border-radius:999px;padding:12px 16px;font-weight:700;box-shadow:0 5px 20px #0b1c3030}
+.admin-panel{display:none;position:fixed;inset:0;z-index:1200;background:#0c1d31b8;padding:12px;align-items:center;justify-content:center}
+.admin-panel.open{display:flex}
+.admin-card{width:min(100%,760px);max-height:94vh;overflow:auto;background:#fff;border-radius:20px;padding:18px;color:#23364b}
+.admin-head{display:flex;justify-content:space-between;align-items:center;gap:12px;position:sticky;top:-18px;background:white;padding:5px 0 12px;z-index:2}
+.admin-head h2{font-size:22px;margin:0}
+.admin-note{background:#fff5dc;border:1px solid #f0d89c;padding:10px;border-radius:10px;font-size:12px;line-height:1.5}
+.admin-row{display:grid;grid-template-columns:minmax(0,1.3fr) 1fr 1fr;gap:8px;align-items:center;border-bottom:1px solid #e8edf2;padding:10px 0}
+.admin-food-name{font-weight:600;font-size:13px}.admin-food-name small{display:block;color:#7a8795;font-weight:400;margin-top:3px}
+.admin-row label{font-size:11px;color:#718093;display:block;margin-bottom:4px}
+.admin-row input{width:100%;min-width:0;padding:10px 8px;border:1px solid #d7e0e8;border-radius:9px;font-size:14px}
+.admin-actions{display:flex;gap:8px;position:sticky;bottom:-18px;background:white;padding:12px 0 4px}
+.admin-actions button{flex:1;border:0;border-radius:10px;padding:13px;background:#172f50;color:white;font-weight:700}
+.admin-actions .secondary{background:#edf2f7;color:#26384b}
+@media(max-width:520px){.admin-row{grid-template-columns:minmax(0,1fr) 86px 86px;gap:6px}.admin-row input{padding:9px 5px}.admin-card{padding:13px}.admin-food-name{font-size:12px}}
+  </style>
+  <style>
+   .admin-launch.footer-admin-launch{
+ position:static;display:inline-flex;align-items:center;gap:5px;
+ margin:12px 0 5px;padding:5px 8px;border:1px solid #d8dee6;
+ border-radius:7px;background:#f7f8fa;color:#263238;
+ box-shadow:none;font-size:11px;font-weight:500;letter-spacing:.1px;
+}
+.admin-launch.footer-admin-launch span{font-size:12px;color:#111}
+footer{display:flex;flex-direction:column;align-items:flex-start}
+  </style>
+  <style>
+   #adminLoginPanel{z-index:10001;display:none;align-items:center;justify-content:center;padding:18px}
+#adminLoginPanel.open{display:flex}
+#adminLoginPanel .admin-card{position:relative;width:min(100%,520px);max-height:90vh;overflow:auto}
+#adminLoginPanel .admin-head{padding-right:48px}
+#adminLoginPanel .admin-login-form{display:grid;gap:16px;margin-top:20px}
+#adminLoginPanel .admin-login-form label{display:grid;gap:7px;font-weight:600}
+#adminLoginPanel .admin-login-form input{width:100%;box-sizing:border-box;padding:14px;border:1px solid #d8dee6;border-radius:12px;font:inherit}
+#adminLoginPanel .login-error{color:#b42318;margin:0}
+  </style>
+  <style>
+   .group-card .dish-img{height:160px}.group-card .dish-body{display:flex;flex-direction:column;gap:10px}
+.group-desc{margin:0;color:#78838d;line-height:1.5;min-height:42px}
+.group-count{color:#60758a;font-weight:600}
+.group-view{margin-top:6px}
+.back-groups{grid-column:1/-1;max-width:260px;margin-bottom:4px}
+  </style>
+  <!-- PHOTO FILE NAMES ARE LISTED IN THE HTML IMAGE LIBRARY BELOW <body>
+  <!-- IMAGE PATHS: Add your image files to the images folder beside this HTML file. -->
+  <div id="htmlPhotoLibrary" hidden>
+    <!-- Rice / ভাত -->
+    <img data-food-photo="Rice" src="image/res/rice.jpg" alt="Rice">
+    <!-- Dal (Lentils) / ডাল -->
+    <img data-food-photo="Dal (Lentils)" src="image/res/dal.jpg" alt="Dal (Lentils)">
+    <!-- Shukto / শুক্তো -->
+    <img data-food-photo="Shukto" src="image/res/shukto.jpg" alt="Shukto">
+    <!-- Mocha Chingri / মোচা চিংড়ি -->
+    <img data-food-photo="Mocha Chingri" src="image/res/mocha-chingri.jpg" alt="Mocha Chingri">
+    <!-- Echor Chingri / এঁচোড় চিংড়ি -->
+    <img data-food-photo="Echor Chingri" src="image/res/echor-chingri.jpg" alt="Echor Chingri">
+    <!-- Cauliflower (Curry/Roast) / ফুলকপি (কারি/রোস্ট) -->
+    <img data-food-photo="Cauliflower (Curry/Roast)" src="image/res/cauliflower.jpg" alt="Cauliflower (Curry/Roast)">
+    <!-- Potol / পটল -->
+    <img data-food-photo="Potol" src="image/res/potol.jpg" alt="Potol">
+    <!-- Macher Kalia / মাছের কালিয়া -->
+    <img data-food-photo="Macher Kalia" src="image/res/macher-kalia.jpg" alt="Macher Kalia">
+    <!-- Doi Katla / দই কাতলা -->
+    <img data-food-photo="Doi Katla" src="image/res/doi-katla.jpg" alt="Doi Katla">
+    <!-- Paturi (Fish/Paneer) / পাতুরি (মাছ/পনির) -->
+    <img data-food-photo="Paturi (Fish/Paneer)" src="image/res/paturi.jpg" alt="Paturi (Fish/Paneer)">
+    <!-- Topse Fry / টপসে ফ্রাই -->
+    <img data-food-photo="Topse Fry" src="image/res/topse-fry.jpg" alt="Topse Fry">
+    <!-- Butterfly Fry / বাটারফ্লাই ফ্রাই -->
+    <img data-food-photo="Butterfly Fry" src="image/res/butterfly-fry.jpg" alt="Butterfly Fry">
+    <!-- Fish Fry / Finger / ফিশ ফ্রাই / ফিঙ্গার -->
+    <img data-food-photo="Fish Fry / Finger" src="image/res/fish-fry-finger.jpg" alt="Fish Fry / Finger">
+    <!-- Chingri Malaikari / চিংড়ি মালাইকারি -->
+    <img data-food-photo="Chingri Malaikari" src="image/res/chingri-malaikari.jpg" alt="Chingri Malaikari">
+    <!-- Sorse Pabda / সরষে পাবদা -->
+    <img data-food-photo="Sorse Pabda" src="image/res/sorse-pabda.jpg" alt="Sorse Pabda">
+    <!-- Fish Finger / ফিশ ফিঙ্গার -->
+    <img data-food-photo="Fish Finger" src="image/res/fish-finger.jpg" alt="Fish Finger">
+    <!-- Sorse Ilish / সরষে ইলিশ -->
+    <img data-food-photo="Sorse Ilish" src="image/res/sorse-ilish.jpg" alt="Sorse Ilish">
+    <!-- Mach Bhaja / মাছ ভাজা -->
+    <img data-food-photo="Mach Bhaja" src="image/res/mach-bhaja.jpg" alt="Mach Bhaja">
+    <!-- Bhapa Ilish / ভাপা ইলিশ -->
+    <img data-food-photo="Bhapa Ilish" src="image/res/bhapa-ilish.jpg" alt="Bhapa Ilish">
+    <!-- Chicken Kosha / চিকেন কষা -->
+    <img data-food-photo="Chicken Kosha" src="image/res/chicken-kosha.jpg" alt="Chicken Kosha">
+    <!-- Chicken Chaap / চিকেন চাপ -->
+    <img data-food-photo="Chicken Chaap" src="image/res/chicken-chaap.jpg" alt="Chicken Chaap">
+    <!-- Chicken Rezala / চিকেন রেজালা -->
+    <img data-food-photo="Chicken Rezala" src="image/res/chicken-rezala.jpg" alt="Chicken Rezala">
+    <!-- Chicken Do Pyaza / চিকেন দোপেঁয়াজা -->
+    <img data-food-photo="Chicken Do Pyaza" src="image/res/chicken-do-pyaza.jpg" alt="Chicken Do Pyaza">
+    <!-- Butter Chicken / বাটার চিকেন -->
+    <img data-food-photo="Butter Chicken" src="image/res/butter-chicken.jpg" alt="Butter Chicken">
+    <!-- Mutton Kosha / মাটন কষা -->
+    <img data-food-photo="Mutton Kosha" src="image/res/mutton-kosha.jpg" alt="Mutton Kosha">
+    <!-- Mutton Biryani / মাটন বিরিয়ানি -->
+    <img data-food-photo="Mutton Biryani" src="image/res/mutton-biryani.jpg" alt="Mutton Biryani">
+    <!-- Chicken Biryani / চিকেন বিরিয়ানি -->
+    <img data-food-photo="Chicken Biryani" src="image/res/chicken-biryani.jpg" alt="Chicken Biryani">
+    <!-- Fried Rice / ফ্রাইড রাইস -->
+    <img data-food-photo="Fried Rice" src="image/res/fried-rice.jpg" alt="Fried Rice">
+    <!-- Chilli Chicken / চিলি চিকেন -->
+    <img data-food-photo="Chilli Chicken" src="image/res/chilli-chicken.jpg" alt="Chilli Chicken">
+    <!-- Pulao / Polao / পোলাও -->
+    <img data-food-photo="Pulao / Polao" src="image/res/pulao-polao.jpg" alt="Pulao / Polao">
+    <!-- Luchi / লুচি -->
+    <img data-food-photo="Luchi" src="image/res/luchi.jpg" alt="Luchi">
+    <!-- Kachori / কচুরি -->
+    <img data-food-photo="Kachori" src="image/res/kachori.jpg" alt="Kachori">
+    <!-- Naan / নান -->
+    <img data-food-photo="Naan" src="image/res/naan.jpg" alt="Naan">
+    <!-- Kulcha / কুলচা -->
+    <img data-food-photo="Kulcha" src="image/res/kulcha.jpg" alt="Kulcha">
+    <!-- Masala Kulcha / মসলা কুলচা -->
+    <img data-food-photo="Masala Kulcha" src="image/res/masala-kulcha.jpg" alt="Masala Kulcha">
+    <!-- Alur Dom / আলুর দম -->
+    <img data-food-photo="Alur Dom" src="image/res/alur-dom.jpg" alt="Alur Dom">
+    <!-- Shahi Alur Dom / শাহী আলুর দম -->
+    <img data-food-photo="Shahi Alur Dom" src="image/res/shahi-alur-dom.jpg" alt="Shahi Alur Dom">
+    <!-- Chana Masala / ছোলা মসলা -->
+    <img data-food-photo="Chana Masala" src="image/res/chana-masala.jpg" alt="Chana Masala">
+    <!-- Cholar Dal / ছোলার ডাল -->
+    <img data-food-photo="Cholar Dal" src="image/res/cholar-dal.jpg" alt="Cholar Dal">
+    <!-- Chana Paneer / ছানা পনির -->
+    <img data-food-photo="Chana Paneer" src="image/res/chana-paneer.jpg" alt="Chana Paneer">
+    <!-- Butter Paneer Masala / বাটার পনির মসলা -->
+    <img data-food-photo="Butter Paneer Masala" src="image/res/butter-paneer-masala.jpg" alt="Butter Paneer Masala">
+    <!-- Chilli Paneer / চিলি পনির -->
+    <img data-food-photo="Chilli Paneer" src="image/res/chilli-paneer.jpg" alt="Chilli Paneer">
+    <!-- Mattar Paneer / মটর পনির -->
+    <img data-food-photo="Mattar Paneer" src="image/res/mattar-paneer.jpg" alt="Mattar Paneer">
+    <!-- Paneer Pasanda / পনির পসন্দা -->
+    <img data-food-photo="Paneer Pasanda" src="image/res/paneer-pasanda.jpg" alt="Paneer Pasanda">
+    <!-- Paneer Satay / পনির সাতে -->
+    <img data-food-photo="Paneer Satay" src="image/res/paneer-satay.jpg" alt="Paneer Satay">
+    <!-- Kashmiri Alur Dom / কাশ্মীরি আলুর দম -->
+    <img data-food-photo="Kashmiri Alur Dom" src="image/res/kashmiri-alur-dom.jpg" alt="Kashmiri Alur Dom">
+    <!-- Chicken Pakora / চিকেন পাকোড়া -->
+    <img data-food-photo="Chicken Pakora" src="image/res/chicken-pakora.jpg" alt="Chicken Pakora">
+    <!-- Chicken Satay / চিকেন সাটে -->
+    <img data-food-photo="Chicken Satay" src="image/res/chicken-satay.jpg" alt="Chicken Satay">
+    <!-- Chicken Cutlet / চিকেন কাটলেট -->
+    <img data-food-photo="Chicken Cutlet" src="image/res/chicken-cutlet.jpg" alt="Chicken Cutlet">
+    <!-- Chicken Kebab / চিকেন কাবাব -->
+    <img data-food-photo="Chicken Kebab" src="image/res/chicken-kebab.jpg" alt="Chicken Kebab">
+    <!-- Fish Cutlet / ফিশ কাটলেট -->
+    <img data-food-photo="Fish Cutlet" src="image/res/fish-cutlet.jpg" alt="Fish Cutlet">
+    <!-- Butterfly Prawn / Chicken / বাটারফ্লাই প্রন / চিকেন -->
+    <img data-food-photo="Butterfly Prawn / Chicken" src="image/res/butterfly-prawn-chicken.jpg" alt="Butterfly Prawn / Chicken">
+    <!-- Fish Orly / ফিশ অরলি -->
+    <img data-food-photo="Fish Orly" src="image/res/fish-orly.jpg" alt="Fish Orly">
+    <!-- Fish Roll / ফিশ রোল -->
+    <img data-food-photo="Fish Roll" src="image/res/fish-roll.jpg" alt="Fish Roll">
+    <!-- Fish Kabiraji / ফিশ কবিরাজি -->
+    <img data-food-photo="Fish Kabiraji" src="image/res/fish-kabiraji.jpg" alt="Fish Kabiraji">
+    <!-- Dimer Devil (Egg Devil) / ডিমের ডেভিল -->
+    <img data-food-photo="Dimer Devil (Egg Devil)" src="image/res/dimer-devil.jpg" alt="Dimer Devil (Egg Devil)">
+    <!-- Aam Kasundi / আম কাসুন্দি -->
+    <img data-food-photo="Aam Kasundi" src="image/res/aam-kasundi.jpg" alt="Aam Kasundi">
+    <!-- Golden Prawn Fry / গোল্ডেন প্রন ফ্রাই -->
+    <img data-food-photo="Golden Prawn Fry" src="image/res/golden-prawn-fry.jpg" alt="Golden Prawn Fry">
+    <!-- Category: rice -->
+    <img data-category-photo="rice" src="image/res/category-rice-biryani.jpg" alt="rice category">
+    <!-- Category: curry -->
+    <img data-category-photo="curry" src="image/res/category-curry-vegetables.jpg" alt="curry category">
+    <!-- Category: chicken -->
+    <img data-category-photo="chicken" src="image/res/category-chicken.jpg" alt="chicken category">
+    <!-- Category: mutton -->
+    <img data-category-photo="mutton" src="image/res/category-mutton.jpg" alt="mutton category">
+    <!-- Category: fish -->
+    <img data-category-photo="fish" src="image/res/category-fish-prawns.jpg" alt="fish category">
+    <!-- Category: starters -->
+    <img data-category-photo="starters" src="image/res/category-starters-snacks.jpg" alt="starters category">
+    <!-- Category: breads -->
+    <img data-category-photo="breads" src="image/res/category-breads.jpg" alt="breads category">
+    <!-- Category: paneer -->
+    <img data-category-photo="paneer" src="image/res/category-paneer.jpg" alt="paneer category">
+  </div>
+; edit src="image/res/filename.jpg" there. -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+ </head>
+ <body>
+  <header>
+   <a class="brand" href="#">
+    <span class="logo">
+     মা
+    </span>
+    <span>
+     <b>
+      Ma Annapurna
+     </b>
+     <small>
+      CATERERS
+     </small>
+    </span>
+   </a>
+   <button class="hamb" id="menuToggle">
+    ☰
+   </button>
+   <nav id="nav">
+    <a data-bn="মেনু" data-en="Menu" href="#menu">
+     Menu
+    </a>
+    <a data-bn="পরিষেবা" data-en="Services" href="#services">
+     Services
+    </a>
+    <a data-bn="আমাদের সম্পর্কে" data-en="About" href="#about">
+     About
+    </a>
+    <a data-bn="যোগাযোগ" data-en="Contact" href="#contact">
+     Contact
+    </a>
+   </nav>
+   <button class="lang" id="langToggle">
+    বাংলা
+   </button>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="hero-copy">
+     <span class="eyebrow" data-bn="সুস্বাদু খাবার • আন্তরিক আপ্যায়ন" data-en="GOOD FOOD • WARM HOSPITALITY">
+      GOOD FOOD • WARM HOSPITALITY
+     </span>
+     <h1 data-bn="প্রতিটি অনুষ্ঠানে স্মরণীয় খাবারের আয়োজন।" data-en="A memorable meal for every occasion.">
+      A memorable meal for every occasion.
+     </h1>
+     <p data-bn="আপনার পছন্দ অনুযায়ী হোম ডেলিভারি, রান্নার পরিষেবা ও সম্পূর্ণ ক্যাটারিং আয়োজন।" data-en="Home delivery, cooking services and complete catering arrangements, planned around your preferences.">
+      Home delivery, cooking services and complete catering arrangements, planned around your preferences.
+     </p>
+     <div class="actions">
+      <a class="btn blue" data-bn="মেনু দেখুন" data-en="Explore Menu" href="#menu">
+       Explore Menu
+      </a>
+      <a class="btn white" data-bn="হোয়াটসঅ্যাপ ↗" data-en="WhatsApp ↗" href="https://wa.me/919903759533">
+       WhatsApp ↗
+      </a>
+     </div>
+     <div class="stat">
+      <b>
+       1–1,000
+      </b>
+      <span data-bn="অতিথির ব্যবস্থা" data-en="Guests catered">
+       Guests catered
+      </span>
+     </div>
+    </div>
+    <div class="hero-photo">
+     <div class="photo-note">
+      MA ANNAPURNA ✦ CATERERS
+     </div>
+    </div>
+   </section>
+   <div class="service-ribbon">
+    <span data-bn="✦ হোম ডেলিভারি" data-en="✦ Home Delivery">
+     ✦ Home Delivery
+    </span>
+    <span data-bn="✦ রান্নার পরিষেবা" data-en="✦ Cooking Services">
+     ✦ Cooking Services
+    </span>
+    <span data-bn="✦ সম্পূর্ণ আয়োজন" data-en="✦ Complete Arrangements">
+     ✦ Complete Arrangements
+    </span>
+    <span data-bn="✦ পছন্দ অনুযায়ী অর্ডার" data-en="✦ Customised Orders">
+     ✦ Customised Orders
+    </span>
+   </div>
+   <section class="section" id="menu">
+    <div class="heading">
+     <div>
+      <span class="eyebrow" data-bn="আমাদের মেনু" data-en="OUR MENU">
+       OUR MENU
+      </span>
+      <h2 data-bn="প্রতিটি টেবিলের জন্য পছন্দের খাবার।" data-en="Something for every table.">
+       Something for every table.
+      </h2>
+      <p data-bn="৫৮টি আলাদা খাবার। Admin দাম যোগ না করা পর্যন্ত দাম দেখানো হবে না।" data-en="58 unique items. No prices are shown until set by the administrator.">
+       58 unique items. No prices are shown until set by the administrator.
+      </p>
+     </div>
+     <div class="count">
+      <b>
+       58
+      </b>
+      <small data-bn="টি খাবার" data-en="ITEMS">
+       ITEMS
+      </small>
+     </div>
+    </div>
+    <div class="controls">
+     <input aria-label="Search dishes" data-placeholder-bn="খাবার খুঁজুন..." data-placeholder-en="Search dishes..." id="search" placeholder="Search dishes..."/>
+     <div class="filters">
+      <button class="active" data-bn="সব খাবার" data-en="All dishes" data-filter="all">
+       All dishes
+      </button>
+      <button data-bn="নিরামিষ" data-en="Vegetarian" data-filter="veg">
+       Vegetarian
+      </button>
+      <button data-bn="আমিষ" data-en="Non-veg" data-filter="nonveg">
+       Non-veg
+      </button>
+      <button data-bn="স্ন্যাকস" data-en="Snacks" data-filter="snacks">
+       Snacks
+      </button>
+     </div>
+    </div>
+    <div class="categories" id="categories">
+    </div>
+    <div class="grid" id="menuGrid">
+    </div>
+    <p data-bn="কোনও খাবার পাওয়া যায়নি।" data-en="No dishes found." hidden="" id="empty">
+     No dishes found.
+    </p>
+   </section>
+   <section class="section soft" id="services">
+    <span class="eyebrow" data-bn="আমাদের পরিষেবা" data-en="WHAT WE DO">
+     WHAT WE DO
+    </span>
+    <h2 data-bn="আপনার অনুষ্ঠানের সম্পূর্ণ আয়োজন।" data-en="Your occasion, taken care of.">
+     Your occasion, taken care of.
+    </h2>
+    <div class="services">
+     <article>
+      <span>
+       ⌂
+      </span>
+      <h3 data-bn="হোম ডেলিভারি" data-en="Home Delivery">
+       Home Delivery
+      </h3>
+      <p data-bn="বাড়ি ও অনুষ্ঠানের জন্য খাবার পৌঁছে দেওয়া হয়।" data-en="Food delivery for home and gatherings.">
+       Food delivery for home and gatherings.
+      </p>
+     </article>
+     <article>
+      <span>
+       ♨
+      </span>
+      <h3 data-bn="রান্নার পরিষেবা" data-en="Cooking Services">
+       Cooking Services
+      </h3>
+      <p data-bn="আপনার মেনু ও পছন্দ অনুযায়ী রান্নার ব্যবস্থা।" data-en="Cooking planned around your menu and preferences.">
+       Cooking planned around your menu and preferences.
+      </p>
+     </article>
+     <article>
+      <span>
+       ✦
+      </span>
+      <h3 data-bn="সম্পূর্ণ আয়োজন" data-en="Complete Arrangements">
+       Complete Arrangements
+      </h3>
+      <p data-bn="১ থেকে ১,০০০ জনের জন্য ক্যাটারিংয়ের ব্যবস্থা।" data-en="Catering support for 1 to 1,000 people.">
+       Catering support for 1 to 1,000 people.
+      </p>
+     </article>
+    </div>
+   </section>
+   <section class="section about" id="about">
+    <div class="about-image">
+    </div>
+    <div>
+     <span class="eyebrow" data-bn="আপনার পছন্দকে গুরুত্ব দিই" data-en="A PERSONAL TOUCH">
+      A PERSONAL TOUCH
+     </span>
+     <h2 data-bn="আপনার পছন্দ অনুযায়ী খাবারের আয়োজন।" data-en="Food made around your preferences.">
+      Food made around your preferences.
+     </h2>
+     <p data-bn="মা অন্নপূর্ণা ক্যাটারার্স দৈনন্দিন খাবার ও বিশেষ অনুষ্ঠানের আয়োজন সহজ করে। আপনার পছন্দ জানালে সেই অনুযায়ী ব্যবস্থা নিয়ে আলোচনা করব।" data-en="Ma Annapurna Caterers helps make everyday meals and special occasions easier. Tell us what you have in mind and we’ll discuss an arrangement that suits your needs.">
+      Ma Annapurna Caterers helps make everyday meals and special occasions easier. Tell us what you have in mind and we’ll discuss an arrangement that suits your needs.
+     </p>
+     <b>
+      Raghunath Das
+     </b>
+     <p class="muted" data-bn="স্বত্বাধিকারী, মা অন্নপূর্ণা ক্যাটারার্স" data-en="Proprietor, Ma Annapurna Caterers">
+      Proprietor, Ma Annapurna Caterers
+     </p>
+    </div>
+   </section>
+   <section class="section booking" id="booking">
+    <div>
+     <span class="eyebrow" data-bn="চলুন সুস্বাদু আয়োজনের পরিকল্পনা করি" data-en="LET'S PLAN SOMETHING DELICIOUS">
+      LET'S PLAN SOMETHING DELICIOUS
+     </span>
+     <h2 data-bn="আপনার অনুষ্ঠানের কথা জানান।" data-en="Tell us about your event.">
+      Tell us about your event.
+     </h2>
+     <p data-bn="বিস্তারিত লিখে WhatsApp-এর মাধ্যমে আপনার enquiry পাঠান।" data-en="Fill in the details and send your enquiry through WhatsApp.">
+      Fill in the details and send your enquiry through WhatsApp.
+     </p>
+     <p>
+      <b data-bn="ফোন:" data-en="Call:">
+       Call:
+      </b>
+      9903759533 / 9804140298
+     </p>
+    </div>
+    <form class="booking-form" id="bookingForm">
+     <label>
+      <span data-bn="আপনার নাম" data-en="Your name">
+       Your name
+      </span>
+      <input data-placeholder-bn="পুরো নাম" data-placeholder-en="Full name" name="name" placeholder="Full name" required=""/>
+     </label>
+     <label>
+      <span data-bn="ফোন নম্বর" data-en="Phone number">
+       Phone number
+      </span>
+      <input data-placeholder-bn="আপনার নম্বর" data-placeholder-en="Your number" inputmode="tel" name="phone" placeholder="Your number" required=""/>
+     </label>
+     <label>
+      <span data-bn="অতিথির সংখ্যা" data-en="Number of guests">
+       Number of guests
+      </span>
+      <input data-placeholder-bn="যেমন ১০০" data-placeholder-en="e.g. 100" max="1000" min="1" name="guests" placeholder="e.g. 100" type="number"/>
+     </label>
+     <label>
+      <span data-bn="পরিষেবা" data-en="Service">
+       Service
+      </span>
+      <select name="service">
+       <option data-bn="হোম ডেলিভারি" data-en="Home Delivery" value="Home Delivery">
+        Home Delivery
+       </option>
+       <option data-bn="রান্নার পরিষেবা" data-en="Cooking Services" value="Cooking Services">
+        Cooking Services
+       </option>
+       <option data-bn="সম্পূর্ণ আয়োজন" data-en="Complete Arrangements" value="Complete Arrangements">
+        Complete Arrangements
+       </option>
+      </select>
+     </label>
+     <label>
+      <span data-bn="অনুষ্ঠানের তারিখ (ঐচ্ছিক)" data-en="Event date (optional)">
+       Event date (optional)
+      </span>
+      <input name="date" type="date"/>
+     </label>
+     <label>
+      <span data-bn="আপনার প্রয়োজন" data-en="Requirements">
+       Requirements
+      </span>
+      <textarea data-placeholder-bn="মেনু, অনুষ্ঠান, স্থান বা পছন্দ" data-placeholder-en="Menu, occasion, location or preferences" name="details" placeholder="Menu, occasion, location or preferences" rows="3"></textarea>
+     </label>
+     <button class="btn blue full" data-bn="WhatsApp-এ enquiry পাঠান ↗" data-en="Send enquiry on WhatsApp ↗" type="submit">
+      Send enquiry on WhatsApp ↗
+     </button>
+     <small data-bn="আপনার enquiry লেখা অবস্থায় WhatsApp খুলবে।" data-en="WhatsApp opens with your enquiry ready to send.">
+      WhatsApp opens with your enquiry ready to send.
+     </small>
+    </form>
+   </section>
+   <section class="section contact" id="contact">
+    <div>
+     <span class="eyebrow" data-bn="যোগাযোগ করুন" data-en="CONTACT US">
+      CONTACT US
+     </span>
+     <h2 data-bn="খাবার নিয়ে কথা বলুন।" data-en="Let's talk food.">
+      Let's talk food.
+     </h2>
+    </div>
+    <div>
+     <b data-bn="ঠিকানা" data-en="Address">
+      Address
+     </b>
+     <p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Kasipur%201%20No.%20Pole%2C%20Dasnagar%2C%20Howrah%2C%20West%20Bengal" rel="noopener" target="_blank">
+       Kasipur 1 No. Pole, Dasnagar, Howrah, West Bengal
+      </a>
+     </p>
+    </div>
+    <div>
+     <b data-bn="ফোন / WhatsApp" data-en="Phone / WhatsApp">
+      Phone / WhatsApp
+     </b>
+     <p>
+      <a href="tel:9903759533">
+       9903759533
+      </a>
+      <br/>
+      <a href="tel:9804140298">
+       9804140298
+      </a>
+     </p>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <a class="brand" href="#">
+    <span class="logo">
+     মা
+    </span>
+    <span>
+     <b>
+      Ma Annapurna
+     </b>
+     <small>
+      CATERERS
+     </small>
+    </span>
+   </a>
+   <p data-bn="যত্নে তৈরি সুস্বাদু খাবার।" data-en="Good food, made with care.">
+    Good food, made with care.
+   </p>
+   <button aria-label="Admin prices" class="admin-launch footer-admin-launch" id="adminLaunch" type="button">
+    <span aria-hidden="true">
+     ♟
+    </span>
+    Admin
+   </button>
+   <small>
+    ©
+    <span id="year">
+    </span>
+    <span data-bn="মা অন্নপূর্ণা ক্যাটারার্স" data-en="Ma Annapurna Caterers">
+     Ma Annapurna Caterers
+    </span>
+   </small>
+  </footer>
+  <div aria-label="Food details" aria-modal="true" class="food-modal" id="foodModal" role="dialog">
+   <div class="food-modal-card">
+    <button aria-label="Close" class="food-modal-close" id="foodModalClose">
+     ×
+    </button>
+    <img alt="" class="food-modal-img" id="foodModalImg" src=""/>
+    <div class="food-modal-kind" id="foodModalKind">
+    </div>
+    <h2 id="foodModalName">
+    </h2>
+    <p class="bn-name" id="foodModalBn">
+    </p>
+    <p class="food-modal-desc" id="foodModalDesc">
+    </p>
+    <div class="portion-grid" id="portionGrid">
+    </div>
+    <div class="modal-actions">
+     <a class="modal-call" data-bn="কল: 9903759533 / 9804140298" data-en="Call: 9903759533 / 9804140298" href="tel:9903759533">
+      Call: 9903759533 / 9804140298
+     </a>
+     <a class="modal-wa" data-bn="হোয়াটসঅ্যাপে যোগাযোগ" data-en="WhatsApp Enquiry" href="https://wa.me/919903759533" id="foodModalWhatsApp" rel="noopener" target="_blank">
+      WhatsApp Enquiry
+     </a>
+    </div>
+   </div>
+  </div>
+  <div aria-label="Administrator login" aria-modal="true" class="admin-panel" id="adminLoginPanel" role="dialog">
+   <section class="admin-card login-card">
+    <button aria-label="Close" class="food-modal-close" id="adminLoginClose" type="button">
+     ×
+    </button>
+    <div class="admin-head">
+     <h2 data-bn="অ্যাডমিন লগইন" data-en="Admin Login">
+      Admin Login
+     </h2>
+    </div>
+    <p class="admin-note" data-bn="এগিয়ে যেতে অ্যাডমিনের ইমেইল দিয়ে লগইন করুন।" data-en="Sign in with the administrator email to continue.">
+     Sign in with the administrator email to continue.
+    </p>
+    <form class="admin-login-form" id="adminLoginForm">
+     <label>
+      <span data-bn="ইমেইল ঠিকানা" data-en="Email address">
+       Email address
+      </span>
+      <input autocomplete="username" id="adminLoginEmail" placeholder="Admin email" required="" type="email"/>
+     </label>
+     <label>
+      <span data-bn="পাসওয়ার্ড" data-en="Password">
+       Password
+      </span>
+      <input autocomplete="current-password" id="adminLoginPassword" placeholder="Password" required="" type="password"/>
+     </label>
+     <p class="login-error" hidden="" id="adminLoginError">
+     </p>
+     <button class="btn blue full" data-bn="লগইন" data-en="Login" id="adminLoginSubmit" type="submit">
+      Login
+     </button>
+    </form>
+   </section>
+  </div>
+  <div aria-label="Admin price editor" aria-modal="true" class="admin-panel" id="adminPanel" role="dialog">
+   <section class="admin-card">
+    <div class="admin-head">
+     <h2 data-bn="মেনুর দাম নির্ধারণ" data-en="Menu Price Settings">
+      Menu Price Settings
+     </h2>
+     <button aria-label="Close" id="adminClose" style="border:0;background:#edf2f7;border-radius:9px;padding:10px 14px;font-size:20px" type="button">
+      ×
+     </button>
+    </div>
+    <p class="admin-note">
+     <b data-bn="প্রিভিউ মোড:" data-en="Preview mode:">
+      Preview mode:
+     </b>
+     <span data-bn="দাম শুধু এই ডিভাইসের এই ব্রাউজারে সেভ হবে। সব দর্শককে দাম দেখাতে নিরাপদ অনলাইন ডেটাবেস ও Admin লগইন লাগবে। ফাঁকা ঘরের দাম দেখা যাবে না।" data-en="Prices are saved only in this browser on this device. To share prices with all visitors, a secure online database and Admin login are required. Empty portion prices will remain hidden.">
+      দাম এই ব্রাউজারের এই ডিভাইসে সেভ হবে। আসল ওয়েবসাইটে সব গ্রাহকের কাছে দাম দেখাতে secure online database/Admin login যুক্ত করতে হবে। যে ঘর ফাঁকা থাকবে, সেই portion-এর দাম দেখা যাবে না।
+     </span>
+    </p>
+    <div id="adminPriceRows">
+    </div>
+    <div class="admin-actions">
+     <button data-bn="দাম সেভ করুন" data-en="Save Prices" id="savePrices" type="button">
+      Save Prices
+     </button>
+     <button class="secondary" data-bn="দাম মুছুন" data-en="Clear Prices" id="clearPrices" type="button">
+      Clear Prices
+     </button>
+    </div>
+   </section>
+  </div>
+  <script>
+   /* Supabase connection setup. Replace both placeholders with your Supabase Project URL and Publishable (anon) key.
+   Never put the service_role/secret key in a public HTML file. */
+
+window.SUPABASE_URL = "https://lbnpckhhngwclyhtlkxt.supabase.co";
+window.SUPABASE_PUBLISHABLE_KEY = "sb_publishable_jw3GnNDscvssLRhTvq3fZw_NrdpFyHr";
+
+window.supabaseClient = null;
+window.supabaseConnectionReady = false;
+if (window.supabase && typeof window.supabase.createClient === "function" &&
+    !window.SUPABASE_URL.startsWith("YOUR_") &&
+    !window.SUPABASE_PUBLISHABLE_KEY.startsWith("YOUR_")) {
+  window.supabaseClient = window.supabase.createClient(
+    window.SUPABASE_URL,
+    window.SUPABASE_PUBLISHABLE_KEY
+  );
+  window.supabaseConnectionReady = true;
+} else {
+  console.warn("Supabase is not configured yet. Add your Project URL and Publishable/anon key in the Supabase setup near the top of the JavaScript.");
+}
+  </script>
+  <script>
+   window.MENU_ITEMS=[{"id":1,"name":"Rice","bn":"ভাত","kind":"veg","category":"Main Course & Traditional Items","description":"Steamed rice, a classic accompaniment for Bengali meals.","description_bn":"সিদ্ধ ভাত—বাঙালি খাবারের চিরচেনা সঙ্গী।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"নিরামিষ"},{"id":2,"name":"Dal (Lentils)","bn":"ডাল","kind":"veg","category":"Main Course & Traditional Items","description":"Comforting lentils prepared in a traditional style.","description_bn":"ঐতিহ্যবাহী পদ্ধতিতে তৈরি ডাল।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"নিরামিষ"},{"id":3,"name":"Shukto","bn":"শুক্তো","kind":"veg","category":"Main Course & Traditional Items","description":"A traditional Bengali mixed-vegetable dish with a gentle bitter-sweet flavour.","description_bn":"হালকা তেতো-মিষ্টি স্বাদের ঐতিহ্যবাহী বাঙালি মিশ্র সবজি।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"নিরামিষ"},{"id":4,"name":"Mocha Chingri","bn":"মোচা চিংড়ি","kind":"nonveg","category":"Main Course & Traditional Items","description":"Banana blossom cooked with prawns in Bengali style.","description_bn":"বাঙালি পদ্ধতিতে মোচা ও চিংড়ির পদ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":5,"name":"Echor Chingri","bn":"এঁচোড় চিংড়ি","kind":"nonveg","category":"Main Course & Traditional Items","description":"Green jackfruit curry prepared with prawns.","description_bn":"এঁচোড় ও চিংড়ি দিয়ে তৈরি তরকারি।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":6,"name":"Cauliflower (Curry/Roast)","bn":"ফুলকপি (কারি/রোস্ট)","kind":"veg","category":"Main Course & Traditional Items","description":"Cauliflower prepared as curry or roast.","description_bn":"ফুলকপি দিয়ে কারি অথবা রোস্ট।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"নিরামিষ"},{"id":7,"name":"Potol","bn":"পটল","kind":"veg","category":"Main Course & Traditional Items","description":"A traditional pointed-gourd preparation.","description_bn":"পটল দিয়ে তৈরি ঐতিহ্যবাহী পদ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"নিরামিষ"},{"id":8,"name":"Macher Kalia","bn":"মাছের কালিয়া","kind":"nonveg","category":"Main Course & Traditional Items","description":"Fish cooked in a rich, spiced Bengali gravy.","description_bn":"মশলাদার ঘন বাঙালি ঝোলে মাছ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":9,"name":"Doi Katla","bn":"দই কাতলা","kind":"nonveg","category":"Main Course & Traditional Items","description":"Katla fish cooked in a yoghurt-based gravy.","description_bn":"দইয়ের ঝোলে কাতলা মাছ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":10,"name":"Paturi (Fish/Paneer)","bn":"পাতুরি (মাছ/পনির)","kind":"mixed","category":"Main Course & Traditional Items","description":"Fish or paneer wrapped in banana leaf and cooked with spices.","description_bn":"মশলা মাখানো মাছ বা পনির কলাপাতায় মুড়ে রান্না।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ/ভিন্ন ধরন"},{"id":11,"name":"Topse Fry","bn":"টপসে ফ্রাই","kind":"nonveg","category":"Main Course & Traditional Items","description":"Crisp fried topse fish.","description_bn":"মুচমুচে টপসে মাছ ভাজা।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":12,"name":"Butterfly Fry","bn":"বাটারফ্লাই ফ্রাই","kind":"mixed","category":"Main Course & Traditional Items","description":"Butterfly-cut item, fried until crisp; ask about the available variety.","description_bn":"বাটারফ্লাই কাটে তৈরি মুচমুচে ফ্রাই; কোন ধরনের আছে জেনে নিন।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ/ভিন্ন ধরন"},{"id":13,"name":"Fish Fry / Finger","bn":"ফিশ ফ্রাই / ফিঙ্গার","kind":"nonveg","category":"Main Course & Traditional Items","description":"Crispy fish fry or finger-style snack.","description_bn":"মুচমুচে ফিশ ফ্রাই বা ফিশ ফিঙ্গার।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":14,"name":"Chingri Malaikari","bn":"চিংড়ি মালাইকারি","kind":"nonveg","category":"Main Course & Traditional Items","description":"Prawns cooked in a creamy coconut-milk gravy.","description_bn":"নারকেলের দুধের ঘন ঝোলে চিংড়ি।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":15,"name":"Sorse Pabda","bn":"সরষে পাবদা","kind":"nonveg","category":"Main Course & Traditional Items","description":"Pabda fish in mustard sauce.","description_bn":"সরষের ঝোলে পাবদা মাছ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":16,"name":"Fish Finger","bn":"ফিশ ফিঙ্গার","kind":"nonveg","category":"Main Course & Traditional Items","description":"Crispy finger-shaped fish pieces.","description_bn":"ফিঙ্গার আকৃতির মুচমুচে মাছের পদ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":17,"name":"Sorse Ilish","bn":"সরষে ইলিশ","kind":"nonveg","category":"Main Course & Traditional Items","description":"Hilsa cooked in mustard sauce.","description_bn":"সরষের ঝোলে ইলিশ মাছ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":18,"name":"Mach Bhaja","bn":"মাছ ভাজা","kind":"nonveg","category":"Main Course & Traditional Items","description":"Fish fried and served as a traditional accompaniment.","description_bn":"ঐতিহ্যবাহী মাছ ভাজা।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":19,"name":"Bhapa Ilish","bn":"ভাপা ইলিশ","kind":"nonveg","category":"Main Course & Traditional Items","description":"Hilsa steamed with Bengali spices.","description_bn":"বাঙালি মশলায় ভাপা ইলিশ।","category_bn":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","kind_bn":"আমিষ"},{"id":20,"name":"Chicken Kosha","bn":"চিকেন কষা","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Chicken slow-cooked in a thick, spicy gravy.","description_bn":"ঘন মশলাদার ঝোলে কষা মুরগি।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":21,"name":"Chicken Chaap","bn":"চিকেন চাপ","kind":"nonveg","category":"Poultry & Meat Dishes","description":"A rich, aromatic chicken preparation.","description_bn":"সুগন্ধি মশলায় তৈরি চিকেন চাপ।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":22,"name":"Chicken Rezala","bn":"চিকেন রেজালা","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Chicken in a mild, creamy and aromatic gravy.","description_bn":"হালকা, ক্রিমি ও সুগন্ধি ঝোলে চিকেন রেজালা।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":23,"name":"Chicken Do Pyaza","bn":"চিকেন দোপেঁয়াজা","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Chicken cooked with plenty of onions and spices.","description_bn":"পেঁয়াজ ও মশলা দিয়ে চিকেন দোপেঁয়াজা।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":24,"name":"Butter Chicken","bn":"বাটার চিকেন","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Chicken in a buttery tomato-based gravy.","description_bn":"বাটার ও টমেটোর ঝোলে চিকেন।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":25,"name":"Mutton Kosha","bn":"মাটন কষা","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Mutton slow-cooked in a thick, spicy gravy.","description_bn":"ঘন মশলাদার ঝোলে কষা মাটন।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":26,"name":"Mutton Biryani","bn":"মাটন বিরিয়ানি","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Fragrant biryani prepared with mutton and rice.","description_bn":"মাটন ও সুগন্ধি চাল দিয়ে বিরিয়ানি।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":27,"name":"Chicken Biryani","bn":"চিকেন বিরিয়ানি","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Fragrant biryani prepared with chicken and rice.","description_bn":"চিকেন ও সুগন্ধি চাল দিয়ে বিরিয়ানি।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":28,"name":"Fried Rice","bn":"ফ্রাইড রাইস","kind":"mixed","category":"Poultry & Meat Dishes","description":"Rice stir-fried with vegetables and seasoning; varieties may vary.","description_bn":"সবজি ও মশলা দিয়ে ফ্রাইড রাইস; ধরন ভিন্ন হতে পারে।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ/ভিন্ন ধরন"},{"id":29,"name":"Chilli Chicken","bn":"চিলি চিকেন","kind":"nonveg","category":"Poultry & Meat Dishes","description":"Chicken tossed in a spicy chilli sauce.","description_bn":"ঝাল চিলি সসে চিকেন।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"আমিষ"},{"id":30,"name":"Pulao / Polao","bn":"পোলাও","kind":"veg","category":"Poultry & Meat Dishes","description":"Fragrant rice cooked with spices.","description_bn":"সুগন্ধি মশলায় তৈরি পোলাও।","category_bn":"চিকেন ও মাটনের পদ","kind_bn":"নিরামিষ"},{"id":31,"name":"Luchi","bn":"লুচি","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Soft, deep-fried puffed Bengali flatbread.","description_bn":"নরম, ফুলে ওঠা লুচি।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":32,"name":"Kachori","bn":"কচুরি","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Crisp stuffed fried bread.","description_bn":"পুরভরা মুচমুচে কচুরি।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":33,"name":"Naan","bn":"নান","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Soft Indian flatbread.","description_bn":"নরম নান রুটি।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":34,"name":"Kulcha","bn":"কুলচা","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Soft flatbread commonly served with curries.","description_bn":"তরকারির সঙ্গে পরিবেশিত নরম কুলচা।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":35,"name":"Masala Kulcha","bn":"মসলা কুলচা","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Kulcha flavoured with spices.","description_bn":"মশলা দিয়ে তৈরি কুলচা।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":36,"name":"Alur Dom","bn":"আলুর দম","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Potatoes cooked in a spicy Bengali-style gravy.","description_bn":"মশলাদার ঝোলে আলুর দম।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":37,"name":"Shahi Alur Dom","bn":"শাহী আলুর দম","kind":"veg","category":"Breads & Vegetarian Specialties","description":"A richer, royal-style potato curry.","description_bn":"সমৃদ্ধ স্বাদের শাহী আলুর দম।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":38,"name":"Chana Masala","bn":"ছোলা মসলা","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Chickpeas cooked with aromatic spices.","description_bn":"সুগন্ধি মশলায় ছোলার তরকারি।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":39,"name":"Cholar Dal","bn":"ছোলার ডাল","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Bengal gram lentils cooked in Bengali style.","description_bn":"বাঙালি পদ্ধতিতে তৈরি ছোলার ডাল।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":40,"name":"Chana Paneer","bn":"ছানা পনির","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Chickpeas and paneer in a spiced gravy.","description_bn":"মশলাদার ঝোলে ছোলা ও পনির।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":41,"name":"Butter Paneer Masala","bn":"বাটার পনির মসলা","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Paneer in a buttery, spiced gravy.","description_bn":"বাটার ও মশলার ঝোলে পনির।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":42,"name":"Chilli Paneer","bn":"চিলি পনির","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Paneer tossed with chilli sauce and seasoning.","description_bn":"চিলি সস ও মশলায় পনির।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":43,"name":"Mattar Paneer","bn":"মটর পনির","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Green peas and paneer in a curry.","description_bn":"মটর ও পনিরের তরকারি।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":44,"name":"Paneer Pasanda","bn":"পনির পসন্দা","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Paneer prepared in a rich, creamy gravy.","description_bn":"ঘন, ক্রিমি ঝোলে পনির পসন্দা।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":45,"name":"Paneer Satay","bn":"পনির সাতে","kind":"veg","category":"Breads & Vegetarian Specialties","description":"Paneer prepared in a satay-inspired style.","description_bn":"সাতে-স্টাইলে তৈরি পনির।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":46,"name":"Kashmiri Alur Dom","bn":"কাশ্মীরি আলুর দম","kind":"veg","category":"Breads & Vegetarian Specialties","description":"A Kashmiri-inspired spiced potato preparation.","description_bn":"কাশ্মীরি ধাঁচে মশলাদার আলুর দম।","category_bn":"রুটি ও নিরামিষ পদ","kind_bn":"নিরামিষ"},{"id":47,"name":"Chicken Pakora","bn":"চিকেন পাকোড়া","kind":"nonveg","category":"Snacks Menu","description":"Chicken pieces coated in spiced batter and fried.","description_bn":"মশলাদার ব্যাটারে মুড়ে ভাজা চিকেন পাকোড়া।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":48,"name":"Chicken Satay","bn":"চিকেন সাটে","kind":"nonveg","category":"Snacks Menu","description":"Seasoned chicken skewers prepared satay-style.","description_bn":"সাতে-স্টাইলে তৈরি মশলাদার চিকেন।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":49,"name":"Chicken Cutlet","bn":"চিকেন কাটলেট","kind":"nonveg","category":"Snacks Menu","description":"A crisp chicken cutlet.","description_bn":"মুচমুচে চিকেন কাটলেট।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":50,"name":"Chicken Kebab","bn":"চিকেন কাবাব","kind":"nonveg","category":"Snacks Menu","description":"Chicken cooked with a blend of kebab spices.","description_bn":"কাবাবের মশলায় তৈরি চিকেন।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":51,"name":"Fish Cutlet","bn":"ফিশ কাটলেট","kind":"nonveg","category":"Snacks Menu","description":"A crisp fish cutlet.","description_bn":"মুচমুচে ফিশ কাটলেট।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":52,"name":"Butterfly Prawn / Chicken","bn":"বাটারফ্লাই প্রন / চিকেন","kind":"nonveg","category":"Snacks Menu","description":"Butterfly-style prawn or chicken fry.","description_bn":"বাটারফ্লাই-স্টাইলে প্রন বা চিকেন ফ্রাই।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":53,"name":"Fish Orly","bn":"ফিশ অরলি","kind":"nonveg","category":"Snacks Menu","description":"Fish coated in batter and fried.","description_bn":"ব্যাটারে মুড়ে ভাজা ফিশ অরলি।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":54,"name":"Fish Roll","bn":"ফিশ রোল","kind":"nonveg","category":"Snacks Menu","description":"A savoury fish-filled roll.","description_bn":"মাছের পুর দিয়ে তৈরি ফিশ রোল।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":55,"name":"Fish Kabiraji","bn":"ফিশ কবিরাজি","kind":"nonveg","category":"Snacks Menu","description":"Fish cutlet covered in a delicate fried egg net.","description_bn":"ডিমের জালের আবরণে ফিশ কবিরাজি।","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"},{"id":56,"name":"Dimer Devil (Egg Devil)","bn":"ডিমের ডেভিল","kind":"egg","category":"Snacks Menu","description":"A spiced egg snack with a crisp coating.","description_bn":"মশলাদার পুর ও আবরণে তৈরি ডিমের ডেভিল।","category_bn":"স্ন্যাকস মেনু","kind_bn":"ডিম"},{"id":57,"name":"Aam Kasundi","bn":"আম কাসুন্দি","kind":"veg","category":"Snacks Menu","description":"Mango and mustard accompaniment.","description_bn":"আম ও সরষে দিয়ে তৈরি কাসুন্দি।","category_bn":"স্ন্যাকস মেনু","kind_bn":"নিরামিষ"},{"id":58,"name":"Golden Prawn Fry","bn":"গোল্ডেন প্রন ফ্রাই","kind":"nonveg","category":"Snacks Menu","description":"Golden, crisp fried prawns.","description_bn":"সোনালি রঙের মুচমুচে প্রন ফ্রাই.","category_bn":"স্ন্যাকস মেনু","kind_bn":"আমিষ"}];
+(()=>{const items=window.MENU_ITEMS;let filter="all",category="all",lang="en";const grid=document.getElementById("menuGrid"),search=document.getElementById("search"),cats=document.getElementById("categories");const categoryLabel=c=>lang==="bn"?({"Main Course & Traditional Items":"প্রধান খাবার ও ঐতিহ্যবাহী পদ","Poultry & Meat Dishes":"চিকেন ও মাটনের পদ","Breads & Vegetarian Specialties":"রুটি ও নিরামিষ পদ","Snacks Menu":"স্ন্যাকস মেনু"}[c]||c):c;
+const t=(a,b)=>lang==="bn"?b:a;
+let selectedPortion="";
+const PRICE_KEY="ma_annapurna_menu_prices_v1";
+
+
+async function syncMenuItemsToSupabase() {
+  const client = window.supabaseClient;
+
+  if (!window.supabaseConnectionReady || !client) {
+    throw new Error("Supabase connection is not ready.");
+  }
+
+  const rows = window.MENU_ITEMS.map((item, index) => ({
+    item_key: "food-" + item.id,
+    name: item.name,
+    category: item.category,
+    description: item.description || "",
+    image_url: "",
+    sort_order: index + 1,
+    is_available: true
+  }));
+
+  const { error } = await client
+    .from("menu_items")
+    .upsert(rows, { onConflict: "item_key" });
+
+  if (error) throw error;
+
+  return rows.length;
+}
+
+
+
+function getPrices(){try{return JSON.parse(localStorage.getItem(PRICE_KEY)||"{}")}catch(e){return {}}}
+function getPrice(id,portion){const v=getPrices()[id]?.[portion];return v!==undefined&&v!==""&&Number.isFinite(Number(v))?Number(v):null}
+function formatPrice(v){return "₹"+Number(v).toLocaleString("en-IN")}
+function openFoodModal(x){
+ const modal=document.getElementById("foodModal");
+ document.getElementById("foodModalImg").src=img(x);
+ document.getElementById("foodModalImg").alt=x.name;
+ document.getElementById("foodModalKind").textContent=lang==="bn"?x.kind_bn:(x.kind==="veg"?"VEGETARIAN":x.kind==="egg"?"EGG":"NON-VEGETARIAN");
+ document.getElementById("foodModalName").textContent=lang==="bn"?x.bn:x.name;
+ document.getElementById("foodModalBn").textContent=lang==="bn"?x.name:x.bn;
+ document.getElementById("foodModalDesc").textContent=lang==="bn"?x.description_bn:x.description;
+ const isSnack=x.category==="Snacks Menu";
+ const portions=isSnack?["4 Pieces","8 Pieces"]:["Half Plate","Full Plate"];
+ selectedPortion="";
+ const pg=document.getElementById("portionGrid");pg.innerHTML="";
+ portions.forEach(p=>{
+  const b=document.createElement("button");b.type="button";b.className="portion-option";
+  const label=lang==="bn"?({"Half Plate":"হাফ প্লেট","Full Plate":"ফুল প্লেট","4 Pieces":"৪ পিস","8 Pieces":"৮ পিস"}[p]):p;
+  const price=getPrice(x.id,p);
+  b.innerHTML="<b>"+label+"</b><span class='price-line "+(price===null?"unset":"")+"'>"+(price===null?(lang==="bn"?"দাম এখনও দেওয়া হয়নি":"Price not set"):formatPrice(price))+"</span><span>"+(lang==="bn"?"পরিমাণ বেছে নিন":"Select portion")+"</span>";
+  b.onclick=()=>{
+   selectedPortion=p;pg.querySelectorAll("button").forEach(z=>z.classList.toggle("selected",z===b));
+   const msg="Hello Ma Annapurna Caterers, I would like to enquire about "+x.name+" ("+p+")"+(price===null?". Please confirm the price.":". Listed price: "+formatPrice(price))+".";
+   const url="https://wa.me/919903759533?text="+encodeURIComponent(msg);
+   document.getElementById("foodModalWhatsApp").href=url;
+   window.open(url,"_blank","noopener");
+   
+  };
+  pg.append(b);
+ });
+ document.getElementById("foodModalWhatsApp").href="https://wa.me/919903759533?text="+encodeURIComponent("Hello Ma Annapurna Caterers, I would like to enquire about "+x.name+". Please share details.");
+ modal.classList.add("open");document.body.style.overflow="hidden";
+}
+function closeFoodModal(){document.getElementById("foodModal").classList.remove("open");document.body.style.overflow=""}
+document.getElementById("foodModalWhatsApp").onclick=e=>{if(document.getElementById("foodModalWhatsApp").dataset.selected!=="true"){e.preventDefault();alert(lang==="bn"?"আগে পরিমাণ নির্বাচন করুন।":"Please select a portion first.");}};
+document.getElementById("foodModalClose").onclick=closeFoodModal;
+document.getElementById("foodModal").addEventListener("click",e=>{if(e.target.id==="foodModal")closeFoodModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeFoodModal()});
+
+function makeCats(){cats.innerHTML="";let all=document.createElement("button");all.textContent=t("All categories","সব বিভাগ");all.className=category==="all"?"active":"";all.onclick=()=>{category="all";makeCats();render()};cats.append(all);[...new Set(items.map(x=>x.category))].forEach(c=>{let b=document.createElement("button");b.textContent=categoryLabel(c);b.className=category===c?"active":"";b.onclick=()=>{category=c;makeCats();render()};cats.append(b)})}
+function img(x){const p=document.querySelector('#htmlPhotoLibrary [data-food-photo="'+CSS.escape(x.name)+'"]');return p?p.getAttribute("src"):""}
+function categoryPhoto(id){const p=document.querySelector('#htmlPhotoLibrary [data-category-photo="'+CSS.escape(id)+'"]');return p?p.getAttribute("src"):""}
+function priceSummary(x){const snack=x.category==="Snacks Menu",p1=snack?"4 Pieces":"Half Plate",p2=snack?"8 Pieces":"Full Plate",a=getPrice(x.id,p1),b=getPrice(x.id,p2);if(a===null&&b===null)return "";return '<div class="card-prices">'+(a===null?"":'<span>'+(lang==="bn"?(snack?"৪ পিস":"হাফ প্লেট"):(snack?"4 Pieces":"Half Plate"))+": "+formatPrice(a)+'</span>')+(b===null?"":'<span>'+(lang==="bn"?(snack?"৮ পিস":"ফুল প্লেট"):(snack?"8 Pieces":"Full Plate"))+": "+formatPrice(b)+'</span>')+'</div>'}
+
+const menuGroups=[
+ {id:"rice",en:"Rice & Biryani",bn:"ভাত ও বিরিয়ানি",descEn:"Rice, fried rice, pulao and all biryani dishes",descBn:"ভাত, ফ্রাইড রাইস, পোলাও ও সব বিরিয়ানির পদ",img:categoryPhoto("rice")},
+ {id:"curry",en:"Curry & Vegetables",bn:"তরকারি ও সবজি",descEn:"Traditional Bengali and vegetarian dishes",descBn:"বাঙালি ঐতিহ্যবাহী ও নিরামিষ পদ",img:categoryPhoto("curry")},
+ {id:"chicken",en:"Chicken",bn:"চিকেনের পদ",descEn:"Chicken curry, chaap, rezala and more",descBn:"চিকেন কষা, চাপ, রেজালা ও আরও পদ",img:categoryPhoto("chicken")},
+ {id:"mutton",en:"Mutton",bn:"মাটনের পদ",descEn:"Mutton kosha and mutton specialities",descBn:"মাটন কষা ও মাটনের বিশেষ পদ",img:categoryPhoto("mutton")},
+ {id:"fish",en:"Fish & Prawns",bn:"মাছ ও চিংড়ির পদ",descEn:"Fish curry, fry and prawn dishes",descBn:"মাছের ঝোল, ফ্রাই ও চিংড়ির পদ",img:categoryPhoto("fish")},
+ {id:"starters",en:"Starters & Snacks",bn:"স্টার্টার ও স্ন্যাকস",descEn:"Crispy bites, cutlets and kebabs",descBn:"কাটলেট, কাবাব ও মুখরোচক স্ন্যাকস",img:categoryPhoto("starters")},
+ {id:"breads",en:"Breads",bn:"রুটি ও পরোটা",descEn:"Luchi, kachori, naan and kulcha",descBn:"লুচি, কচুরি, নান ও কুলচা",img:categoryPhoto("breads")},
+ {id:"paneer",en:"Paneer Specialities",bn:"পনিরের পদ",descEn:"Butter paneer, chilli paneer and more",descBn:"বাটার পনির, চিলি পনির ও আরও পদ",img:categoryPhoto("paneer")}
+];
+let selectedGroup=null;
+function groupFor(x){
+ const n=(x.name+" "+x.bn).toLowerCase();
+ if(x.category==="Snacks Menu") return "starters";
+ // Biryani belongs under Rice & Biryani, not Chicken or Mutton.
+ if(/biryani|বিরিয়ানি|বিরিয়ানি/.test(n)) return "rice";
+ if(/rice|pulao|polao|ভাত|পোলাও|ফ্রাইড রাইস/.test(n)) return "rice";
+ if(/mutton|মাটন/.test(n)) return "mutton";
+ if(/chicken|চিকেন/.test(n)) return "chicken";
+ if(/fish|prawn|chingri|ilish|katla|pabda|topse|paturi|মাছ|চিংড়ি|চিংড়ি|ইলিশ|কাতলা|পাবদা/.test(n)) return "fish";
+ if(/paneer|পনির/.test(n)) return "paneer";
+ if(/luchi|kachori|naan|kulcha|রুটি|লুচি|কচুরি|নান|কুলচা/.test(n)) return "breads";
+ return "curry";
+}
+function renderGroupCards(){
+ grid.innerHTML="";
+ menuGroups.forEach(g=>{
+  const count=items.filter(x=>groupFor(x)===g.id).length;
+  const card=document.createElement("article");card.className="dish group-card";
+  card.innerHTML='<div class="dish-img"><img loading="lazy" alt="'+g.en+'" src="'+g.img+'"></div><div class="dish-body"><h3>'+ (lang==="bn"?g.bn:g.en)+'</h3><p class="group-desc">'+(lang==="bn"?g.descBn:g.descEn)+'</p><small class="group-count">'+count+(lang==="bn"?" টি পদ":" dishes")+'</small><button class="detail-btn group-view" type="button">'+(lang==="bn"?"এখন দেখুন":"View Now")+'</button></div>';
+  card.querySelector("button").onclick=()=>{selectedGroup=g.id;render()};
+  const im=card.querySelector("img");im.onerror=()=>{im.style.display="none";card.querySelector(".dish-img").style.background="linear-gradient(135deg,#edf2f7,#dfe7ef)"};
+  grid.append(card);
+ });
+ document.getElementById("empty").hidden=true;
+}
+
+function render(){
+ if(!selectedGroup && !search.value.trim() && filter==="all" && category==="all"){renderGroupCards();return}
+ let q=search.value.toLowerCase().trim();
+ let found=items.filter(x=>{
+  let match=(x.name+" "+x.bn+" "+x.category+" "+x.description+" "+x.description_bn).toLowerCase().includes(q);
+  let fm=filter==="all"||(filter==="snacks"?x.category==="Snacks Menu":filter==="veg"?x.kind==="veg":filter==="nonveg"?["nonveg","egg","mixed"].includes(x.kind):true);
+  let cm=category==="all"||x.category===category;
+  let gm=!selectedGroup||groupFor(x)===selectedGroup;
+  return match&&fm&&cm&&gm
+ });
+ grid.innerHTML="";
+ if(selectedGroup){
+  const back=document.createElement("button");back.className="detail-btn back-groups";back.type="button";back.textContent=lang==="bn"?"← সব মেনু বিভাগে ফিরুন":"← All menu categories";back.onclick=()=>{selectedGroup=null;render()};grid.append(back);
+ }
+ found.forEach(x=>{
+  let card=document.createElement("article");card.className="dish";
+  let label=lang==="bn"?x.kind_bn:(x.kind==="veg"?"Vegetarian":x.kind==="egg"?"Egg":x.kind==="mixed"?"Mixed":"Non-veg");
+  card.innerHTML='<div class="dish-img"><img loading="lazy" alt="'+x.name+'" src="'+img(x)+'"><span class="pill">'+label+'</span></div><div class="dish-body"><h3>'+(lang==='bn'?x.bn:x.name)+'</h3><p class="bn-name">'+(lang==='bn'?x.name:x.bn)+'</p><button class="detail-btn" type="button">'+(lang==='bn'?'বিস্তারিত দেখুন':'View Details')+'</button></div>';
+  card.querySelector('.detail-btn').onclick=()=>openFoodModal(x);
+  const im=card.querySelector("img");im.onerror=()=>{im.style.display="none";card.querySelector(".dish-img").style.background="linear-gradient(135deg,#edf2f7,#dfe7ef)"};
+  grid.append(card)
+ });
+ document.getElementById("empty").hidden=found.length>0
+}
+
+document.querySelectorAll("[data-filter]").forEach(b=>b.onclick=()=>{filter=b.dataset.filter;category="all";selectedGroup=null;makeCats();document.querySelectorAll("[data-filter]").forEach(z=>z.classList.toggle("active",z===b));render()});search.oninput=()=>{if(search.value.trim())selectedGroup=null;render()};makeCats();render();document.getElementById("year").textContent=new Date().getFullYear();document.getElementById("menuToggle").onclick=()=>document.getElementById("nav").classList.toggle("open");document.getElementById("langToggle").onclick=()=>{lang=lang==="en"?"bn":"en";document.body.classList.toggle("bn",lang==="bn");document.documentElement.lang=lang;document.getElementById("langToggle").textContent=lang==="en"?"বাংলা":"English";document.querySelectorAll("[data-en]").forEach(el=>el.innerHTML=el.dataset[lang]);document.querySelectorAll("#adminPriceRows label").forEach(el=>{const v=el.textContent;el.textContent=lang==="bn"?({"Half Plate":"হাফ প্লেট","Full Plate":"ফুল প্লেট","4 Pieces":"৪ পিস","8 Pieces":"৮ পিস"}[v]||v):({"হাফ প্লেট":"Half Plate","ফুল প্লেট":"Full Plate","৪ পিস":"4 Pieces","৮ পিস":"8 Pieces"}[v]||v)});document.querySelectorAll("#adminPriceRows input").forEach(el=>el.placeholder=lang==="bn"?"দাম ₹":"₹ Price");document.querySelectorAll("[data-placeholder-en]").forEach(el=>el.placeholder=el.dataset["placeholder-"+lang]);search.placeholder=t("Search dishes...","খাবার খুঁজুন...");document.querySelectorAll("[data-filter]").forEach(b=>{b.textContent=({"all":t("All dishes","সব খাবার"),"veg":t("Vegetarian","নিরামিষ"),"nonveg":t("Non-veg","আমিষ"),"snacks":t("Snacks","স্ন্যাকস")})[b.dataset.filter]});makeCats();render()};document.getElementById("bookingForm").onsubmit=e=>{e.preventDefault();let f=new FormData(e.target),msg=["Catering enquiry — Ma Annapurna Caterers","Name: "+f.get("name"),"Phone: "+f.get("phone"),"Guests: "+(f.get("guests")||"Not specified"),"Service: "+f.get("service"),"Date: "+(f.get("date")||"Not specified"),"Requirements: "+(f.get("details")||"Not specified")].join("\n");window.open("https://wa.me/919903759533?text="+encodeURIComponent(msg),"_blank")}
+function buildAdminRows(){
+ const root=document.getElementById("adminPriceRows");root.innerHTML="";
+ const prices=getPrices();
+ window.MENU_ITEMS.forEach(x=>{
+  const row=document.createElement("div");row.className="admin-row";
+  const title=document.createElement("div");title.className="admin-food-name";title.textContent=x.name;
+  const bn=document.createElement("small");bn.textContent=x.bn;title.append(bn);
+  const snack=x.category==="Snacks Menu", p1=snack?"4 Pieces":"Half Plate",p2=snack?"8 Pieces":"Full Plate";
+  row.append(title);
+  [[p1,"a"],[p2,"b"]].forEach(([portion,key])=>{
+   const wrap=document.createElement("div"),lab=document.createElement("label"),input=document.createElement("input");
+   lab.textContent=portion;input.type="number";input.min="0";input.step="1";input.placeholder="₹ Price";
+   input.dataset.food=x.id;input.dataset.portion=portion;
+   const saved=prices[x.id]?.[portion];if(saved!==undefined&&saved!=="")input.value=saved;
+   wrap.append(lab,input);row.append(wrap);
+  });
+  root.append(row);
+ });
+}
+document.getElementById("adminLaunch").onclick=()=>{document.getElementById("adminLoginPanel").classList.add("open");document.body.style.overflow="hidden";document.getElementById("adminLoginError").hidden=true;document.getElementById("adminLoginEmail").focus()}; 
+document.getElementById("adminLoginClose").onclick=()=>{document.getElementById("adminLoginPanel").classList.remove("open");document.body.style.overflow=""};
+document.getElementById("adminLoginPanel").addEventListener("click",e=>{if(e.target.id==="adminLoginPanel"){e.currentTarget.classList.remove("open");document.body.style.overflow=""}});
+
+document.getElementById("adminLoginForm").onsubmit = async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById("adminLoginEmail").value.trim().toLowerCase();
+  const pass = document.getElementById("adminLoginPassword").value;
+  const err = document.getElementById("adminLoginError");
+
+  err.hidden = true;
+
+  if (!window.supabaseConnectionReady || !window.supabaseClient) {
+    err.textContent = "Supabase connection is not ready. Please check the connection settings.";
+    err.hidden = false;
+    return;
+  }
+
+  try {
+    const { data, error } = await window.supabaseClient.auth.signInWithPassword({
+      email: email,
+      password: pass
+    });
+
+    if (error) throw error;
+
+    const { data: isAdmin, error: adminError } =
+      await window.supabaseClient.rpc("is_menu_admin");
+
+    if (adminError) throw adminError;
+
+    if (!isAdmin) {
+      await window.supabaseClient.auth.signOut();
+      throw new Error("This account is not authorized as an admin.");
+    }
+
+    document.getElementById("adminLoginPanel").classList.remove("open");
+    document.getElementById("adminLoginPassword").value = "";
+await syncMenuItemsToSupabase();
+    buildAdminRows();
+
+    document.getElementById("adminPanel").classList.add("open");
+    document.body.style.overflow = "hidden";
+
+  } catch (error) {
+    console.error("Admin login error:", error);
+    err.textContent =
+      error.message || "Login failed. Check your email and password.";
+    err.hidden = false;
+  }
+};
+
+document.getElementById("adminClose").onclick=()=>{document.getElementById("adminPanel").classList.remove("open");document.body.style.overflow=""};
+document.getElementById("adminPanel").addEventListener("click",e=>{if(e.target.id==="adminPanel"){e.currentTarget.classList.remove("open");document.body.style.overflow=""}});
+
+document.getElementById("savePrices").onclick = async () => {
+  const btn = document.getElementById("savePrices");
+  btn.disabled = true;
+
+  try {
+    const client = window.supabaseClient;
+
+    if (!window.supabaseConnectionReady || !client) {
+      throw new Error("Supabase connection is not ready.");
+    }
+
+    const prices = {};
+
+    document.querySelectorAll("#adminPriceRows input").forEach(inp => {
+      const val = inp.value.trim();
+
+      if (val !== "") {
+        if (!prices[inp.dataset.food]) {
+          prices[inp.dataset.food] = {};
+        }
+        prices[inp.dataset.food][inp.dataset.portion] = Number(val);
+      }
+    });
+
+    const { data: menuItems, error: menuError } = await client
+      .from("menu_items")
+      .select("id, item_key");
+
+    if (menuError) throw menuError;
+
+    const dbIdByKey = {};
+    (menuItems || []).forEach(item => {
+      if (item.item_key) {
+        dbIdByKey[item.item_key] = item.id;
+      }
+    });
+
+    const rows = [];
+
+    Object.entries(prices).forEach(([foodId, portions]) => {
+      const itemKey = "food-" + foodId;
+      const dbId = dbIdByKey[itemKey];
+
+      if (!dbId) {
+        throw new Error("Menu item missing in database: " + itemKey);
+      }
+
+      Object.entries(portions).forEach(([portion, price]) => {
+        rows.push({
+          menu_item_id: dbId,
+          portion_name: portion,
+          price: price
+        });
+      });
+    });
+
+    const { error: deleteError } = await client
+      .from("menu_portions")
+      .delete()
+      .neq("id", -1);
+
+    if (deleteError) throw deleteError;
+
+    if (rows.length > 0) {
+      const { error: insertError } = await client
+        .from("menu_portions")
+        .insert(rows);
+
+      if (insertError) throw insertError;
+    }
+
+    localStorage.setItem(PRICE_KEY, JSON.stringify(prices));
+    render();
+
+    alert("Prices saved to Supabase successfully.");
+    document.getElementById("adminPanel").classList.remove("open");
+    document.body.style.overflow = "";
+
+  } catch (error) {
+    console.error("Price save failed:", error);
+    alert("Price save failed: " + error.message);
+  } finally {
+    btn.disabled = false;
+  }
+};
+
+document.getElementById("clearPrices").onclick=()=>{if(confirm(lang==="bn"?"এই ডিভাইসে সেভ করা সব দাম মুছে ফেলবেন?":"Clear all saved menu prices on this device?")){localStorage.removeItem(PRICE_KEY);buildAdminRows()}};
+})();
+  </script>
+ </body>
+</html>
+
